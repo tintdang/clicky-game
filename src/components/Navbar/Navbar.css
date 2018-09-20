@@ -1,4 +1,10 @@
 .navbar {
-    background: purple;
+    background: lightcyan;
     width: 100%;
 }
+/* .navbar li {
+    padding: 25px 0;
+    display: inline-block;
+    /* width: 33.3%; */
+    /* text-align: center;
+} */ 
