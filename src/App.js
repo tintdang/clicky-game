@@ -6,7 +6,11 @@ import Game from './components/Game'
 
 const App = () => (
   <Wrapper>
-    <Navbar />
+    <Navbar 
+      score={0}
+      topScore={12}
+      gameResult={"Click an image to begin!"}
+    />
     <Jumbotron />
     <Game />
   </Wrapper>

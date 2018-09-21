@@ -7,6 +7,9 @@ class Card extends React.Component {
   }
 
   handleClick = () => {
+    if (this.state.isClicked === true){
+      alert("YOU CLICKED ME ALREADY")
+    }
     this.setState({ isClicked: true });
   }
 

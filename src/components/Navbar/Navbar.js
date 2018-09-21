@@ -1,11 +1,11 @@
 import React from "react";
 import "./Navbar.css";
 
-const Navbar = () =>
+const Navbar = props =>
   <nav className="navbar">
-    <a className="navbar-brand" href="#">Clicky Game</a>
-    <span className="navbar-text">Click an image to begin!</span>
-    <span>Score: 0 | Top Score: 0</span>
+    <a className="navbar-brand" href="/">Clicky Game</a>
+    <span className="navbar-text">{props.gameResult}</span>
+    <span>Score: {props.score} | Top Score: {props.topScore}</span>
   </nav>;
 
 export default Navbar;
