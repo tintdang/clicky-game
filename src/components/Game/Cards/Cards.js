@@ -1,9 +1,24 @@
 import React from 'react';
 import './Cards.css';
 
-const Card = () =>
-<div className="card">
-    <h1>This is a card</h1>
-</div>
+class Card extends React.Component {
+  state = {
+    isClicked: false
+  }
+
+  handleClick = () => {
+    this.setState({ isClicked: true });
+  }
+
+  render() {
+    return (
+      <div className="card" onClick={this.handleClick}>
+        <div>
+          <img className="img-fluid" src="https://gbf.wiki/images/thumb/3/3e/Scathacha_NPC.png/480px-Scathacha_NPC.png" alt="something" />
+        </div>
+      </div>
+    );
+  }
+}
 
 export default Card;
