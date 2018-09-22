@@ -1,0 +1,17 @@
+[
+  {
+    "id": 1,
+    "img": "https://gbf.wiki/images/1/1a/Freezie_B.png",
+    "isClicked": false
+  },
+  {
+    "id": 2,
+    "img": "https://gbf.wiki/images/b/b9/Freezie_A.png",
+    "isClicked": false
+  },
+  {
+    "id": 3,
+    "img": "https://gbf.wiki/images/thumb/3/3e/Scathacha_NPC.png/480px-Scathacha_NPC.png",
+    "isClicked": false
+  }
+]
