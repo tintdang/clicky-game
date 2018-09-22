@@ -5,3 +5,6 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 ### to be added later
 
 [Deployed Link](https://tintdang.github.io/clicky-game/)
+
+## To do
+[ ] Update scores in a section where it's visable, most likely in jumbotron
