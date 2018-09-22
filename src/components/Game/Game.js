@@ -15,6 +15,7 @@ class Game extends React.Component {
     console.log("I mounted!")
     console.log(`The json is: \n${JSON.stringify(game)}`)
     console.log(`I want to shuffle this json file`)
+    //This will shuffle the json array and will
     this.shuffle(game)
     console.log(`Shuffled! ${JSON.stringify(game)}`)
   }
@@ -25,6 +26,7 @@ class Game extends React.Component {
       const j = Math.floor(Math.random() * (i + 1));
       [game[i], game[j]] = [game[j], game[i]];
     }
+    // this will update the state of the game itself. can be also this.setState({ game: game })
     return this.setState({ game })
   }
 
