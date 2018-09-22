@@ -36,7 +36,7 @@ class Game extends React.Component {
 
     // checks if the clicked status is true, if true: alert me.
     // Clear the score back to 0 and reset the isClicked states back to false
-    // then shuffle the game
+    // then run the shuffle the game function
     if (this.state.game[id - 1].isClicked) {
       alert("YOU CLICKED ME ALREADY")
       const game = this.state.game.map(card => {
@@ -77,7 +77,7 @@ class Game extends React.Component {
         />
 
         <Jumbotron />
-        <div className="d-flex justify-content-center cardrow">
+        <div className="d-flex flex-wrap justify-content-center cardrow">
 
           {this.state.game.map(card => (
             <Card

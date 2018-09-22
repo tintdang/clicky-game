@@ -11,7 +11,52 @@
   },
   {
     "id": 3,
-    "img": "https://gbf.wiki/images/thumb/3/3e/Scathacha_NPC.png/480px-Scathacha_NPC.png",
+    "img": "https://gbf.wiki/images/thumb/b/bb/The_Lowain_Bros_B.png/480px-The_Lowain_Bros_B.png",
+    "isClicked": false
+  },
+  {
+    "id": 4,
+    "img": "https://gbf.wiki/images/thumb/f/f4/Cucouroux_%28SSR%29_A.png/480px-Cucouroux_%28SSR%29_A.png",
+    "isClicked": false
+  },
+  {
+    "id": 5,
+    "img": "https://gbf.wiki/images/thumb/1/1c/Grea_B.png/480px-Grea_B.png",
+    "isClicked": false
+  },
+  {
+    "id": 6,
+    "img": "https://gbf.wiki/images/thumb/8/83/Lancelot_%28Wind%29_A.png/480px-Lancelot_%28Wind%29_A.png",
+    "isClicked": false
+  },
+  {
+    "id": 7,
+    "img": "https://gbf.wiki/images/thumb/8/86/Lunalu_%28SSR%29_B.png/480px-Lunalu_%28SSR%29_B.png",
+    "isClicked": false
+  },
+  {
+    "id": 8,
+    "img": "https://gbf.wiki/images/thumb/3/39/Romeo_A.png/480px-Romeo_A.png",
+    "isClicked": false
+  },
+  {
+    "id": 9,
+    "img": "https://gbf.wiki/images/thumb/5/5b/Selfira_B.png/480px-Selfira_B.png",
+    "isClicked": false
+  },
+  {
+    "id": 10,
+    "img": "https://gbf.wiki/images/thumb/3/37/Vane_%28SSR%29_A.png/480px-Vane_%28SSR%29_A.png",
+    "isClicked": false
+  },
+  {
+    "id": 11,
+    "img": "https://gbf.wiki/images/thumb/6/61/Wulf_and_Renie_A.png/480px-Wulf_and_Renie_A.png",
+    "isClicked": false
+  },
+  {
+    "id": 12,
+    "img": "https://gbf.wiki/images/thumb/0/06/Zooey_A.png/480px-Zooey_A.png",
     "isClicked": false
   }
 ]
