@@ -8,6 +8,7 @@ import game from "../../cards.json"
 class Game extends React.Component {
   state = {
     count: 0,
+    gameMessage: "Click an image to begin!",
     game
   }
 
@@ -36,20 +37,19 @@ class Game extends React.Component {
     console.log(`the current index is ${id - 1}`)
     console.log(`The current state of this card's clicked status is ${this.state.game[id - 1].isClicked}`)
 
-    // checks if the clicked status is true, if true: alert me.
+    // checks if the clicked status is true, if true: alert me. by updating the gameMessage to tell them they are wrong
     // Clear the score back to 0 and reset the isClicked states back to false
     // then run the shuffle the game function
     if (this.state.game[id - 1].isClicked) {
-      alert("YOU CLICKED ME ALREADY")
       const game = this.state.game.map(card => {
         card.isClicked = false
         return card
       })
       this.shuffle(game)
-      return this.setState({ count: 0, game });
+      return this.setState({ count: 0, game, gameMessage: "Wrong! Game Over!" });
     }
 
-    //makes new function where it looks for the specific id and updates the state to be true, this still needs to render the rest of the cards
+    //makes new function where it looks for the specific id and updates the state to be true, this still needs to render the rest of the cards in order for the state change to work.
     const game = this.state.game.map(card => {
       if (card.id === id) {
         console.log(`This is the right id cause ${card.id} = ${id}`)
@@ -66,7 +66,7 @@ class Game extends React.Component {
     this.shuffle(game)
     // This updates the counter if a card is clicked
     // and will update the game's current state
-    this.setState({ count: this.state.count + 1, game });
+    this.setState({ count: this.state.count + 1, game, gameMessage: "Correct!" });
   }
 
   render() {
@@ -75,7 +75,7 @@ class Game extends React.Component {
         <Navbar
           score={this.state.count}
           topScore={12}
-          gameResult={"Click an image to begin!"}
+          gameResult={this.state.gameMessage}
         />
 
         <Jumbotron />
