@@ -1,4 +1,24 @@
 .jumbotron {
+    position: relative;
     width: 100%;
     text-align: center;
+    background:none;
+    color: white;
+    z-index: 1;
+
+}
+.jumbotron .bg {
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    background-image: url(http://i.imgur.com/i6mXo8I.jpg);
+    background-size: 125%;
+    z-index: 0;
+    filter: blur(.2px) grayscale(20%)
+}
+
+.content {
+    position: relative;
 }
