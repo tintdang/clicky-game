@@ -8,6 +8,7 @@ import game from "../../cards.json"
 class Game extends React.Component {
   state = {
     count: 0,
+    topScore: 0,
     gameMessage: "Click an image to begin!",
     game
   }
@@ -66,7 +67,15 @@ class Game extends React.Component {
     this.shuffle(game)
     // This updates the counter if a card is clicked
     // and will update the game's current state
+    // Check if top score is less than the current count
+    this.checkTopScore()
     this.setState({ count: this.state.count + 1, game, gameMessage: "Correct!" });
+  }
+
+  checkTopScore = () => {
+    if(this.state.count + 1 > this.state.topScore){
+      return this.setState({ topScore: this.state.count + 1})
+    }
   }
 
   render() {
@@ -74,7 +83,7 @@ class Game extends React.Component {
       <div className="container">
         <Navbar
           score={this.state.count}
-          topScore={12}
+          topScore={this.state.topScore}
           gameResult={this.state.gameMessage}
         />
 
